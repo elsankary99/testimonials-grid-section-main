@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.person-1,
+.person-2,
+.person-3,
+.person-4,
+.person-5 {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.p-1-details,
+.p-2-details,
+.p-3-details,
+.p-4-details,
+.p-5-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+img {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.p-1-name,
+.p-2-name,
+.p-3-name,
+.p-4-name,
+.p-5-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.p-1-education,
+.p-2-education,
+.p-3-education,
+.p-4-education,
+.p-5-education {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.person-1 .p-1-1,
+.person-2 .p-2-1,
+.person-3 .p-3-1,
+.person-4 .p-4-1,
+.person-5 .p-5-1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.person-1 .p-1-2,
+.person-2 .p-2-2,
+.person-5 .p-5-2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 70%;
+}
+.person-3 .p-3-2,
+.person-4 .p-4-2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--very-dark-grayish-blue);
+  opacity: 70%;
+}
+
+.person-1 {
+  grid-area: 1/1/2/3;
+  background-color: var(--moderate-violet);
+  color: var(--white);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-position: top right 20%;
+  background-repeat: no-repeat;
+}
+
+.person-2 {
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--white);
+}
+
+.person-3 {
+  grid-area: 1/4/3/5;
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+}
+
+.person-4 {
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+}
+
+.person-5 {
+  grid-area: 2/2/3/4;
+  background-color: var(--very-dark-blackish-blue);
+  color: var(--white);
+}
